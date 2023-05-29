@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572023C22A253C8300312D61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572023C12A253C8300312D61 /* GoogleService-Info.plist */; };
+		572023C52A253FA500312D61 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 572023C42A253FA500312D61 /* FirebaseCrashlytics */; };
+		572023C72A253FA500312D61 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 572023C62A253FA500312D61 /* FirebaseFirestore */; };
 		57986B572A25240E00499A31 /* Night_MarketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986B562A25240E00499A31 /* Night_MarketApp.swift */; };
 		57986B592A25240E00499A31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986B582A25240E00499A31 /* ContentView.swift */; };
 		57986B5B2A25241400499A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57986B5A2A25241400499A31 /* Assets.xcassets */; };
@@ -14,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		572023C12A253C8300312D61 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		57986B532A25240E00499A31 /* Night_Market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Night_Market.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57986B562A25240E00499A31 /* Night_MarketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Night_MarketApp.swift; sourceTree = "<group>"; };
 		57986B582A25240E00499A31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				572023C52A253FA500312D61 /* FirebaseCrashlytics in Frameworks */,
+				572023C72A253FA500312D61 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +59,7 @@
 			children = (
 				57986B562A25240E00499A31 /* Night_MarketApp.swift */,
 				57986B582A25240E00499A31 /* ContentView.swift */,
+				572023C12A253C8300312D61 /* GoogleService-Info.plist */,
 				57986B5A2A25241400499A31 /* Assets.xcassets */,
 				57986B5C2A25241400499A31 /* Preview Content */,
 			);
@@ -83,6 +90,10 @@
 			dependencies = (
 			);
 			name = Night_Market;
+			packageProductDependencies = (
+				572023C42A253FA500312D61 /* FirebaseCrashlytics */,
+				572023C62A253FA500312D61 /* FirebaseFirestore */,
+			);
 			productName = Night_Market;
 			productReference = 57986B532A25240E00499A31 /* Night_Market.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 57986B4A2A25240D00499A31;
+			packageReferences = (
+				572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 57986B542A25240E00499A31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +141,7 @@
 			files = (
 				57986B5E2A25241400499A31 /* Preview Assets.xcassets in Resources */,
 				57986B5B2A25241400499A31 /* Assets.xcassets in Resources */,
+				572023C22A253C8300312D61 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +354,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		572023C42A253FA500312D61 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		572023C62A253FA500312D61 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57986B4B2A25240D00499A31 /* Project object */;
 }
