@@ -1,0 +1,8 @@
+app_identifier("com.wassim.Zerouta.Night-Market") # The bundle identifier of your app
+apple_id("wassim.zerouta@gmail.com") # Your Apple Developer Portal username
+
+itc_team_id("126258665") # App Store Connect Team ID
+team_id("6KJCJHF4C4") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
