@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		572023C22A253C8300312D61 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 572023C12A253C8300312D61 /* GoogleService-Info.plist */; };
-		572023C52A253FA500312D61 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 572023C42A253FA500312D61 /* FirebaseCrashlytics */; };
-		572023C72A253FA500312D61 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 572023C62A253FA500312D61 /* FirebaseFirestore */; };
 		57986B572A25240E00499A31 /* Night_MarketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986B562A25240E00499A31 /* Night_MarketApp.swift */; };
 		57986B592A25240E00499A31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986B582A25240E00499A31 /* ContentView.swift */; };
 		57986B5B2A25241400499A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57986B5A2A25241400499A31 /* Assets.xcassets */; };
 		57986B5E2A25241400499A31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57986B5D2A25241400499A31 /* Preview Assets.xcassets */; };
+		57B7C6742A275D1500595F21 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 57B7C6732A275D1500595F21 /* FirebaseAuth */; };
+		57B7C6762A275D1500595F21 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 57B7C6752A275D1500595F21 /* FirebaseCrashlytics */; };
+		57B7C6782A275D1500595F21 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 57B7C6772A275D1500595F21 /* FirebaseFirestore */; };
+		57B7C67A2A275D1500595F21 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 57B7C6792A275D1500595F21 /* FirebaseStorage */; };
+		57B7C67F2A27750800595F21 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C67E2A27750800595F21 /* Place.swift */; };
+		57B7C6812A27795D00595F21 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C6802A27795D00595F21 /* PlaceViewModel.swift */; };
+		57B7C6832A277F6D00595F21 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C6822A277F6D00595F21 /* MapView.swift */; };
+		57B7C6852A27D39C00595F21 /* DeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C6842A27D39B00595F21 /* DeviceLocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,10 @@
 		57986B582A25240E00499A31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57986B5A2A25241400499A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57986B5D2A25241400499A31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57B7C67E2A27750800595F21 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		57B7C6802A27795D00595F21 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
+		57B7C6822A277F6D00595F21 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		57B7C6842A27D39B00595F21 /* DeviceLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,8 +40,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				572023C52A253FA500312D61 /* FirebaseCrashlytics in Frameworks */,
-				572023C72A253FA500312D61 /* FirebaseFirestore in Frameworks */,
+				57B7C6742A275D1500595F21 /* FirebaseAuth in Frameworks */,
+				57B7C67A2A275D1500595F21 /* FirebaseStorage in Frameworks */,
+				57B7C6762A275D1500595F21 /* FirebaseCrashlytics in Frameworks */,
+				57B7C6782A275D1500595F21 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +69,9 @@
 		57986B552A25240E00499A31 /* Night_Market */ = {
 			isa = PBXGroup;
 			children = (
+				57B7C67D2A27723C00595F21 /* Models */,
+				57B7C67C2A27723300595F21 /* Views */,
+				57B7C67B2A27722900595F21 /* ViewModels */,
 				57986B562A25240E00499A31 /* Night_MarketApp.swift */,
 				57986B582A25240E00499A31 /* ContentView.swift */,
 				572023C12A253C8300312D61 /* GoogleService-Info.plist */,
@@ -72,6 +87,31 @@
 				57986B5D2A25241400499A31 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		57B7C67B2A27722900595F21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				57B7C6802A27795D00595F21 /* PlaceViewModel.swift */,
+				57B7C6842A27D39B00595F21 /* DeviceLocationService.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		57B7C67C2A27723300595F21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57B7C6822A277F6D00595F21 /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		57B7C67D2A27723C00595F21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				57B7C67E2A27750800595F21 /* Place.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,8 +131,10 @@
 			);
 			name = Night_Market;
 			packageProductDependencies = (
-				572023C42A253FA500312D61 /* FirebaseCrashlytics */,
-				572023C62A253FA500312D61 /* FirebaseFirestore */,
+				57B7C6732A275D1500595F21 /* FirebaseAuth */,
+				57B7C6752A275D1500595F21 /* FirebaseCrashlytics */,
+				57B7C6772A275D1500595F21 /* FirebaseFirestore */,
+				57B7C6792A275D1500595F21 /* FirebaseStorage */,
 			);
 			productName = Night_Market;
 			productReference = 57986B532A25240E00499A31 /* Night_Market.app */;
@@ -123,7 +165,7 @@
 			);
 			mainGroup = 57986B4A2A25240D00499A31;
 			packageReferences = (
-				572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				57B7C6722A275D1500595F21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 57986B542A25240E00499A31 /* Products */;
 			projectDirPath = "";
@@ -152,6 +194,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B7C6812A27795D00595F21 /* PlaceViewModel.swift in Sources */,
+				57B7C67F2A27750800595F21 /* Place.swift in Sources */,
+				57B7C6852A27D39C00595F21 /* DeviceLocationService.swift in Sources */,
+				57B7C6832A277F6D00595F21 /* MapView.swift in Sources */,
 				57986B592A25240E00499A31 /* ContentView.swift in Sources */,
 				57986B572A25240E00499A31 /* Night_MarketApp.swift in Sources */,
 			);
@@ -285,6 +331,7 @@
 				DEVELOPMENT_TEAM = 6KJCJHF4C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Night Market à besoin d'acceder à votre position";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -314,6 +361,7 @@
 				DEVELOPMENT_TEAM = 6KJCJHF4C4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Night Market à besoin d'acceder à votre position";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -356,7 +404,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		57B7C6722A275D1500595F21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
@@ -367,15 +415,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		572023C42A253FA500312D61 /* FirebaseCrashlytics */ = {
+		57B7C6732A275D1500595F21 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 57B7C6722A275D1500595F21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		57B7C6752A275D1500595F21 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57B7C6722A275D1500595F21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseCrashlytics;
 		};
-		572023C62A253FA500312D61 /* FirebaseFirestore */ = {
+		57B7C6772A275D1500595F21 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 572023C32A253FA500312D61 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 57B7C6722A275D1500595F21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		57B7C6792A275D1500595F21 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57B7C6722A275D1500595F21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
