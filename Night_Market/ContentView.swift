@@ -7,28 +7,40 @@
 
 import SwiftUI
 import Combine
+import MapKit
 
 struct ContentView: View {
     
     @StateObject var deviceLocationServices = DeviceLocationService.shared
-    
     @State var tokens: Set<AnyCancellable> = []
-    @State var coordinates: (lat: Double, lon: Double) = (0,0)
+    @State var coordinates: (lat: Double, lon: Double) = (0.5,0.5)
 
     var body: some View {
-        VStack {
-            Text("lat: \(coordinates.lat)")
-            Text("lon: \(coordinates.lon)")
+        GeometryReader { geometry in
+            ScrollView {
+                VStack {
+                    ZStack {
+                        MapView(region: .constant(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: coordinates.lat, longitude: coordinates.lon), span: MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2))))
+                            .frame(width: geometry.size.width, height: geometry.size.height / 2.5)
+                            .offset(y: -geometry.size.height / 5)
+                        Rectangle()
+                            .foregroundColor(.white)
+                            .cornerRadius(25)
+                            .frame(width: geometry.size.width, height: geometry.size.height * 2.2/3)
+                            .offset(y: geometry.size.height / 3)
+                    }
+                }
+            }
         }
-        .onAppear{
-            observeCoordinatorUpdates()
-            observedLocationAccessDenied()
-            deviceLocationServices.requestLocationUpdates()
-        }
+                .ignoresSafeArea()
+                .onAppear{
+                    observeCoordinatorUpdates()
+                    observedLocationAccessDenied()
+                    deviceLocationServices.requestLocationUpdates()
+                }
     }
         
-    
-    
+
     func observeCoordinatorUpdates() {
             deviceLocationServices.coordinatesPublisher
                 .receive(on: DispatchQueue.main)

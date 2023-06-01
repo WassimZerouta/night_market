@@ -30,6 +30,7 @@ class DeviceLocationService: NSObject, CLLocationManagerDelegate, ObservableObje
         }
     }
     
+    
     private lazy var locationManager: CLLocationManager = {
         let manager = CLLocationManager()
         manager.desiredAccuracy = kCLLocationAccuracyBest
