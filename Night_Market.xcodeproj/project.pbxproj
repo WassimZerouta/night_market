@@ -12,6 +12,7 @@
 		57986B592A25240E00499A31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57986B582A25240E00499A31 /* ContentView.swift */; };
 		57986B5B2A25241400499A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57986B5A2A25241400499A31 /* Assets.xcassets */; };
 		57986B5E2A25241400499A31 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57986B5D2A25241400499A31 /* Preview Assets.xcassets */; };
+		57B2A9162A2924FC0037D8BE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B2A9152A2924FB0037D8BE /* DetailView.swift */; };
 		57B7C6742A275D1500595F21 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 57B7C6732A275D1500595F21 /* FirebaseAuth */; };
 		57B7C6762A275D1500595F21 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 57B7C6752A275D1500595F21 /* FirebaseCrashlytics */; };
 		57B7C6782A275D1500595F21 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 57B7C6772A275D1500595F21 /* FirebaseFirestore */; };
@@ -20,6 +21,8 @@
 		57B7C6812A27795D00595F21 /* PlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C6802A27795D00595F21 /* PlaceViewModel.swift */; };
 		57B7C6852A27D39C00595F21 /* DeviceLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C6842A27D39B00595F21 /* DeviceLocationService.swift */; };
 		57B7C6872A288DE500595F21 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C6862A288DE500595F21 /* MapView.swift */; };
+		57B7C6892A28BD6500595F21 /* gridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B7C6882A28BD6500595F21 /* gridItemView.swift */; };
+		57B7C68B2A28C22C00595F21 /* Spoon_cLe_Bonbon-1-2598x1996.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 57B7C68A2A28C22C00595F21 /* Spoon_cLe_Bonbon-1-2598x1996.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +32,13 @@
 		57986B582A25240E00499A31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57986B5A2A25241400499A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57986B5D2A25241400499A31 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57B2A9152A2924FB0037D8BE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		57B7C67E2A27750800595F21 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		57B7C6802A27795D00595F21 /* PlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewModel.swift; sourceTree = "<group>"; };
 		57B7C6842A27D39B00595F21 /* DeviceLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLocationService.swift; sourceTree = "<group>"; };
 		57B7C6862A288DE500595F21 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		57B7C6882A28BD6500595F21 /* gridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gridItemView.swift; sourceTree = "<group>"; };
+		57B7C68A2A28C22C00595F21 /* Spoon_cLe_Bonbon-1-2598x1996.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spoon_cLe_Bonbon-1-2598x1996.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 				57986B582A25240E00499A31 /* ContentView.swift */,
 				572023C12A253C8300312D61 /* GoogleService-Info.plist */,
 				57986B5A2A25241400499A31 /* Assets.xcassets */,
+				57B7C68A2A28C22C00595F21 /* Spoon_cLe_Bonbon-1-2598x1996.jpg */,
 				57986B5C2A25241400499A31 /* Preview Content */,
 			);
 			path = Night_Market;
@@ -102,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				57B7C6862A288DE500595F21 /* MapView.swift */,
+				57B7C6882A28BD6500595F21 /* gridItemView.swift */,
+				57B2A9152A2924FB0037D8BE /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B7C68B2A28C22C00595F21 /* Spoon_cLe_Bonbon-1-2598x1996.jpg in Resources */,
 				57986B5E2A25241400499A31 /* Preview Assets.xcassets in Resources */,
 				57986B5B2A25241400499A31 /* Assets.xcassets in Resources */,
 				572023C22A253C8300312D61 /* GoogleService-Info.plist in Resources */,
@@ -195,10 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B7C6812A27795D00595F21 /* PlaceViewModel.swift in Sources */,
+				57B2A9162A2924FC0037D8BE /* DetailView.swift in Sources */,
 				57B7C6872A288DE500595F21 /* MapView.swift in Sources */,
 				57B7C67F2A27750800595F21 /* Place.swift in Sources */,
 				57B7C6852A27D39C00595F21 /* DeviceLocationService.swift in Sources */,
 				57986B592A25240E00499A31 /* ContentView.swift in Sources */,
+				57B7C6892A28BD6500595F21 /* gridItemView.swift in Sources */,
 				57986B572A25240E00499A31 /* Night_MarketApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
